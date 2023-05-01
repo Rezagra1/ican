@@ -1,0 +1,5 @@
+venv/
+.gitignore.txt
+.git/
+LICENSE.chromedriver
+chromedriver.exe
