@@ -18,7 +18,12 @@ password_field.send_keys("963852741")
 
 loigin_buttom = driver.find_element(By.ID, "Loginbtn")
 loigin_buttom.click()
-time.sleep(2)
+time.sleep(10)
 
 
+setting_btm = driver.find_element(By.CLASS_NAME,"div.btn.btn-link.btn-sm[name='كاربران']")
+setting_btm.click()
+
+
+time.sleep(50000)
 print("done")
