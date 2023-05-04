@@ -21,8 +21,11 @@ loigin_buttom.click()
 time.sleep(10)
 
 
-setting_btm = driver.find_element(By.CLASS_NAME,"div.btn.btn-link.btn-sm[name='كاربران']")
+setting_btm = driver.find_element(By.CSS_SELECTOR,"#Home > div.bgMenu > table > tbody > tr > td:nth-child(5) > div")
 setting_btm.click()
+
+iframe = driver.find_element(By.CSS_SELECTOR, '//*[(@id = "MainFrameWork")]')
+driver.switch_to.frame(iframe)
 
 
 time.sleep(50000)
